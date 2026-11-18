@@ -483,3 +483,29 @@ footer {
   border-radius: 14px;
   border: 1px solid #292e3a;
 }
+
+/* Адаптация видео для настоящих мобильных устройств */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero-image video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 260px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
