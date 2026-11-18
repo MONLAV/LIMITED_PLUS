@@ -343,9 +343,10 @@ footer {
   min-width: 0;
 }
 
-.hero-image img {
+.hero-image video {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -431,7 +432,6 @@ footer {
   }
 }
 
-
 @media (max-width: 480px) {
   .hero {
     padding: 30px 0;
@@ -467,4 +467,19 @@ footer {
     width: 100%;
     padding: 12px 14px;
   }
+}
+
+/* Широкий баннер с автомобилем */
+.car-banner {
+  padding: 35px 0;
+}
+
+.car-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 1px solid #292e3a;
 }
